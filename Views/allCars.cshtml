@@ -1,0 +1,13 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<div class="container">
+  <h1>Car directory</h1>
+  @foreach(var car in Model)
+  {
+    <p>Make and model : @car.GetModel(), Year : @car.GetYear(), Mileage : @car.GetMileage()</p>
+  }
+
+  <p><a href="/"Add new task</a></p>
+</div>

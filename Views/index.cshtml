@@ -1,0 +1,22 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<div class="container">
+  <p>Enter a car name</p>
+  <form action = "/car_added" method="post">
+    <div class="form-group">
+      <label for="model">What is make and model</label>
+      <input type="text" name="model" id="modelID" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="year">What is the year the car was made?</label>
+      <input type="number" name="year" id = "year" class = "form-control">
+    </div>
+    <div class ="form-group">
+      <label for="mileage">How many miles does it have?</label>
+      <input type="number" name="mileage" id = "mileage" class = "form-control">
+    </div>
+    <button type = "submit" class = "btn btn-info">Submit</button>
+</form>
+</div>

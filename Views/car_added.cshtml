@@ -1,0 +1,16 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<div class="container">
+  <h1>Car added to directory</h1>
+  <p>Desc of vehicle</p>
+  <ul>
+    <li>Make and model: @Model.GetModel()</li>
+    <li>Year: @Model.GetYear()</li>
+    <li>Mileage: @Model.GetMileage()</li>
+
+  </ul>
+  <p><a href="/">Add another car</a></p>
+  <p><a href="/allCars">View car directory</a></p>
+</div>
